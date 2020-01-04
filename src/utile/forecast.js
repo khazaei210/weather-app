@@ -11,7 +11,7 @@ const forecast = (a, b, callback) =>{
             callback(undefined, {
                sum: body.currently.summary,
                min: body.daily.data[0].temperatureLow,
-               max: body.daily.data[0].temperatureHigh
+               max: body.daily.data[0].temperatureHigh      
             })
         }
     })
