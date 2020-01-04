@@ -56,7 +56,7 @@ app.get('/weather', (req, res)=>{
             forcastResults = forecastdata
             res.send({
                 location: loc,
-                forecast: `min : ${forecastdata.min}, max: ${forecastdata.max} and summary: ${forecastdata.sum}; chance to rain is :${forecastdata.chance}%`
+                forecast: `min : ${forecastdata.min}, max: ${forecastdata.max} and summary: ${forecastdata.sum}; chance to rain is :${forecastdata.chance * 100}%`
             })
           })
     })
