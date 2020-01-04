@@ -6,7 +6,7 @@
     para[0].classList.remove('error')
     para[0].textContent = 'Loading...'
     para[1].textContent = ''
-    fetch(`http://localhost:3000/weather?location=${value}`).then((res) =>{
+    fetch(`/weather?location=${value}`).then((res) =>{
         res.json().then((data)=>{
             if (data.location)
             {

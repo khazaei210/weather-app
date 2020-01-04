@@ -3,6 +3,7 @@ const forecast = require('./utile/forecast')
 const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
+const port = process.env.PORT || 3000
 
 //----------------path config
 
@@ -82,6 +83,6 @@ app.get('*', (req, res) =>{
 
 // --------------------listening to port
 
-app.listen(3000, ()=>{
+app.listen(port, ()=>{
     console.log('server is runnig')
 })
